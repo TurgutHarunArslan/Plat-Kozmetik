@@ -4,73 +4,251 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ürünlerimiz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f5f4b9298e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scrollbar.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="position: sticky;">
-        <a class="navbar-brand" href="#">
-            <img src="resimler/navbar/navbar.png" style="width: 10rem;object-fit: contain;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#defaultNavbar1" aria-controls="defaultNavbar1" aria-expanded="true" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="defaultNavbar1">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white h5" href="index.html">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white h5" href="shop.html">Ürünler</a>
-            </li>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="position: sticky;">
+    <a class="navbar-brand" href="#">
+        <img src="resimler/navbar/navbar.png" style="width: 10rem;object-fit: contain;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#defaultNavbar1" aria-controls="defaultNavbar1" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white h5" href="index.html">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white h5" href="shop.html">Ürünler</a>
+        </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link text-white h5">İletişim</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <a href="https://api.whatsapp.com/send?phone=905424621247" class="float" target="_blank">
   <i class="fa fa-whatsapp my-float"></i>
 </a>
 
 
-<div class="container">
-    <div class="row g-3">
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img src="./images/europe.jpg" class="card-img-top" alt="makine resmi">
+<div class="container" >
+    <div class="row g-3" style=" position:relative; align-items:center;">
+        <div class="col-12 col-md-6 col-lg-4 list" style="margin-bottom:30px;">
+            <div class="card" style="width: 15rem;">
+                <img src="resimler/urunler/diodeyeni.png" class="card-img-top" alt="makine resmi">
                 <div class="card-body">
-                    <h5 class="card-title">Makine</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Eva Life Venus | Diode Lazer</h5>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">Ürünü İnceleyin</a>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img src="./images/london.jpg" class="card-img-top" alt="makine resmi">
+        <div class="col-12 col-md-6 col-lg-4 list"  style="margin-bottom:30px ;">
+          <div class="card" style="width: 15rem;">
+                <img src="resimler/urunler/ipl.jpg" class="card-img-top" alt="makine resmi">
                 <div class="card-body">
-                    <h5 class="card-title">Makine</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">OPT SHR | IPL</h5>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal2">Ürunu İnceleyin</a>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img src="./images/new-york.jpg" class="card-img-top" alt="makine resmi">
+        <div class="col-12 col-md-6 col-lg-4 list"  style="margin-bottom:30px ;">
+          <div class="card" style="width: 15rem;">
+                <img src="resimler/urunler/hifu.png" class="card-img-top" alt="makine resmi">
                 <div class="card-body">
-                    <h5 class="card-title">Makine</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Hıfu</h5>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal3">Ürunu İnceleyin</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>      
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 
+<!-- Eva Life Venus | Diode Lazer -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal1">Eva Life Venus | Diode Lazer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Teknik Özellikler</h2>
+        Model:                                    Diode 808<br>
+        Lazer Tipi:                               Diode Lazer<br>
+        Dalga Boyu:                                    808 sm<br>
+        Spot Büyüklüğü:                                12mm <br>
+        Ekran:                          8 inç Dokunmatik ekran <br>
+        Soğutma Sistemi:          Hava, Su, Yarı İletken Soğutma <br>
+        Güç Girişi:         2200W (AC220V / AC1100V/20A) <br>
+        Hız modu:                     Saniyede 10 Atış <br>
+        Enerji Yoğunluğu:                   5 - 10 cm2 <br>
+        Frekans:              6- 10 Hz (Ayarlanabilir) <br>
+        Soğutma:                      Temaslı Soğutma <br>
+        Farklı renk seçenekleri mevcut. <br> 
+        Tüm cilt tiplerine uygundur. Yüz bölgesinde en başarılı diode cihaz sistemleridir. <br>
+        <br><br><br>
+        En gelişmiş modern lazer sistemlerinden olması ile 808 nm dalga boyundaki en çok tercih edilen, epilasyon uygulaması için en sık kullanılan lazer sistemidir.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <a type="button" class="btn btn-primary" href="contact.html">Satın Almak İçin iletişime geçin</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- OPT SHR | IPL -->
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="Modal2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal">OPT SHR | IPL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Teknik Özellikler</h2>
+        Başlık Tipi:  Sıfır Başlık <br>
+        Uyguluma Alanı: 50*50 <br>
+        Filtre:   650*350 <br>
+        Ekran Tipi: Dokunmatik, Renkli Ekran <br>
+        Soğutma sistemi: Tek Sistem Teknolojisi <br>
+        Enerji Çıktısı: 1/50 <br> <br>
+        IPL cihazları 400 -1200 nm dalga boyu arasındaki ışığı kullanarak yüksek enerjili atışlar yapabilen cihazlardır. Lazerde tek dalga boyu kullanılırken, IPL yönteminde farklı farklı dalga boyları kullanılır.
+        <br> <br>
+        IPL tedavisinde kullanılan farklı filtreler ile ışığın dalga boyu değiştirilebilir. Atım gücü, atım süreleri, atım sayısı gibi parametreler uygulayıcı tarafından ayarlanabilir. Bu şekilde tek bir IPL cihazı ile bir çok dermatoloji hastalığın tedavisi yapılabilir.
+        <br><br>
+        IPL cihazları ile,
+        <br><br>
+        Epilasyon <br>
+        Akne tedavisi <br>
+        Cilt yenileme <br>
+         Kırışıklık tedavisi <br>
+        Pigmente lezyonların tedavisi <br>
+        Solar Lentigo, efelit tedavisi <br>
+        Striae Distensea ( Çatlak) <br>
+        <br>
+        tedavileri yapılmaktadır.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <a type="button" class="btn btn-primary" href="contact.html">Satın Almak İçin iletişime geçin</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hıfu -->
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="Modal3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal">Hıfu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Teknik Özellikler</h2>
+        Başlık Tipi:  Sıfır Başlık <br>
+        Uyguluma Alanı: 50*50 <br>
+        Filtre: 650*350 <br>
+        Ekran Tipi: Dokunmatik, Renkli Ekran <br>
+        Soğutma sistemi: Tek Sistem Teknolojisi <br>
+        Enerji Çıktısı: 1/50 <br> <br>
+        HIFU MiyuTeraphy bilimsel medikal estetik uygulamalarındaki en son gelişmedir. Modern yüz gerdirme olarak hastayı sosyal hayatından hiç uzaklaştırmadan, mikro odaklı ultrasonu kullanarak cerrahi yüz gerdirmeyle aynı derinlikteki dokuları invaziv olmayan bir şekilde tedavi eder.
+        <br><br><br>
+        Cilt gençleştirmede kullanılan lazerler cildin belli bir derinliğinin altına inemezler. Fokuslu ultrason tedavisi cildin 4,5 mm altındaki fasya dokusuna ulaşır. Lazer ve radyofrekans cihazları cildin bu kadar derinine inemez. Fasya dokusu cilt germe amaliyatlarında cildi toparlamak için müdahale edilen bir bölgedir. Fokuslu ultrason tedavisi cildin altına odaklanarak fasya dokusunu küçülten ısı alanları oluşturur. Fasyadaki küçülme nedeniyle işlemden hemen sonar cildin sarkmış alanlarında toparlanma gözlenir. Fokuslu ultrason ayrıca ciltteki kollajeni arttırdığı için işlemden sonar ciltteki toparlanma artışı devam ederek üçüncü ayın sonunda maksimuma ulaşır.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <a type="button" class="btn btn-primary" href="contact.html">Satın Almak İçin iletişime geçin</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- İletişim, Copyright -->
+<footer id="footer">
+  <div class="container">
+    <div class="row text-center">
+      <div class="footer-content">
+        <div class="wow animated fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+          <p>Aşağıdaki Linklerden</p>
+          <p>Son kampanyalar ve fırsatlardan haberiniz olsun!</p>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li class="wow animated zoomIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;"><a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+            </li>
+            <li class="wow animated zoomIn animated" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: zoomIn;"><a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <p>Copyright © 2022-2022 <br> Tasarım ve Yazılımı <a href="https://github.com/TurgutHarunArslan">Turgut Harun Arslan</a>
+          tarafından yapılmıştır. </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

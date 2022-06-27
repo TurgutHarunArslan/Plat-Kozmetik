@@ -37,24 +37,25 @@ font-size: 29px;
     transform: translate(-50%, -50%);
 }
 .controls{
-    left: 46vw;
+    left: 45vw;
     bottom: 50px;
 }
+
 @media only screen and (min-width: 700px) and (max-width: 800px)  {
     .controls{
-        left: 44vw;
+        left: 42vw;
         bottom: 50px;
     } 
 }
 @media only screen and (min-width: 375px) and (max-width: 425px)  {
     .controls{
-        left: 40vw;
+        left: 38vw;
         bottom: 50px;
     } 
 }
 @media only screen and (min-width: 320px) and (max-width: 374px)  {
     .controls{
-        left: 37vw;
+        left: 36vw;
         bottom: 50px;
     } 
 }
@@ -63,6 +64,11 @@ font-size: 29px;
         left: 44vw;
         top: 600px;
     } 
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .float {
+        display: none;
+    }
 }
 .float {
     position: fixed;
@@ -187,4 +193,49 @@ font-size: 29px;
 .footer-content>p {
     color: #ababab;
     font-size: 12px;
+}
+.card > img{    
+    height: 290px;
+}
+.list{
+display: flex;
+justify-content: center;
+width: 360px;
+height: 430px;
+}
+.e1{
+width: 100%;
+height: 36%;
+}
+.e2{
+height: 60%;
+width: 100%;
+}
+.eposta{
+    width: 350px;
+    height: 200px;
+    outline: #7f7f7f solid 1px;
+    position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+}
+.instagram{
+    width: 350px;
+    height: 200px;
+    outline: #7f7f7f solid 1px;
+    position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+}
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .eposta{
+        width: 300px;
+        height: 200px;
+        outline: #7f7f7f solid 1px;
+    }
+    .instagram{
+        width: 300px;
+        height: 200px;
+        outline: #7f7f7f solid 1px;
+    }
 }
